@@ -13,19 +13,25 @@ BuildRequires:	automake
 BuildRequires:	libtool
 BuildRequires:	pkgconfig >= 1:0.19
 BuildRequires:	xorg-proto-fontsproto-devel
-BuildRequires:	xorg-proto-randrproto-devel
 BuildRequires:	xorg-proto-renderproto-devel
-BuildRequires:	xorg-proto-videoproto-devel
+BuildRequires:	xorg-proto-xextproto-devel
+BuildRequires:	xorg-proto-xf86dgaproto-devel
 BuildRequires:	xorg-util-util-macros >= 0.99.2
 BuildRequires:	xorg-xserver-server-devel >= 1.1.99.902
 Requires:	xorg-xserver-server >= 1.1.99.902
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-X.org video driver for Intel Vermilion Range graphics chipsets.
+X.org video driver for Intel Vermilion graphics chipsets. It can drive
+most VERMILION-compatible video cards, but only makes use of the basic
+standard VERMILION core that is common to these cards. The driver
+supports depths 15 and 24.
 
 %description -l pl.UTF-8
 Sterownik obrazu X.org dla układów graficznych Intel Vermilion.
+Potrafi obsłużyć większość kart kompatybilnych z VERMILION, ale
+wykorzystuje tylko podstawowy standardowy rdzeń VERMILION wspólny dla
+tych kart. Sterownik obsługuje głębie kolorów 15 i 24.
 
 %prep
 %setup -q -n xf86-video-vermilion-%{version}

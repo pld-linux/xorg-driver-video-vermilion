@@ -1,12 +1,12 @@
 Summary:	X.org video driver for Intel Vermilion Range chipsets
 Summary(pl.UTF-8):	Sterownik obrazu X.org dla układów graficznych Intel Vermilion
 Name:		xorg-driver-video-vermilion
-Version:	1.0.0
+Version:	1.0.1
 Release:	1
 License:	MIT
 Group:		X11/Applications
 Source0:	http://xorg.freedesktop.org/releases/individual/driver/xf86-video-vermilion-%{version}.tar.bz2
-# Source0-md5:	3a45adbfbcae487cf04dbcd089533c3d
+# Source0-md5:	0f7c6be1bbdc5eb43d82b356fe0f5104
 URL:		http://xorg.freedesktop.org/
 BuildRequires:	autoconf >= 2.57
 BuildRequires:	automake
@@ -17,8 +17,8 @@ BuildRequires:	xorg-proto-renderproto-devel
 BuildRequires:	xorg-proto-xextproto-devel
 BuildRequires:	xorg-proto-xf86dgaproto-devel
 BuildRequires:	xorg-util-util-macros >= 0.99.2
-BuildRequires:	xorg-xserver-server-devel >= 1.1.99.902
-Requires:	xorg-xserver-server >= 1.1.99.902
+BuildRequires:	xorg-xserver-server-devel >= 1.3.99.0
+Requires:	xorg-xserver-server >= 1.3.99.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
